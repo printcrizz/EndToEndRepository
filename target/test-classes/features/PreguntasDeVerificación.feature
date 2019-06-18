@@ -13,6 +13,6 @@ Feature: Como Test Engineer
     Scenario: 02 - Ingreso de datos a Paso 1
       Given Abrir navegador con la siguiente URL "https://privado.inversionessecurity.cl/clavePrimaria/primerIngreso"
       And Ingreso los datos para llegar al Paso 1
-      And
+      Then Close Browser
 
 

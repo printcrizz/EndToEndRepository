@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="61,496">
+           time="29,380">
   <properties />
   
   
-            <testcase name="feature" time="61,496" classname="TestRunner" />
+            <testcase name="feature" time="29,380" classname="TestRunner" />
       
 </testsuite>

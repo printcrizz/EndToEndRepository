@@ -62,12 +62,12 @@ class StepDefinitions {
     }
     @And("^Ingresar el Rut de Usuario \"([^\\\"]*)\" al formulario\$")
     void RutLogin(String value){
-        sel.sendValuesXpath(sel.GetXpathByName("Ingreso_rut", "MainPage_po"),value)
+        sel.sendValuesXpath(sel.GetXpathByName("Ingreso_rut", "Login_access_po"),value)
         Thread.sleep(2000)
     }
     @And("^Ingresar la contrasena de Usuario \"([^\\\"]*)\" al formulario\$")
     void PasswordLogin(String value){
-        sel.sendValuesXpath(sel.GetXpathByName("Password_rut","MainPage_po"),value)
+        sel.sendValuesXpath(sel.GetXpathByName("Password_rut","Login_access_po"),value)
         Thread.sleep(2000)
     }
     @And("^Escribir \"([^\\\"]*)\" en el campo \"([^\\\"]*)\"\$")

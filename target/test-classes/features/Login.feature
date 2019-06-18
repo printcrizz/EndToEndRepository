@@ -8,6 +8,6 @@ Feature: Validaciones en Login
     Then Validar redireccionamiento a "https://privado.inversionessecurity.cl/login"
     And Ingresar el Rut de Usuario "12485766k" al formulario
     And Ingresar la contrasena de Usuario "1234asdf" al formulario
-    When Buscar botón "LoginButton" de "MainPage_po" y presionarlo
+    When Buscar botón "LoginButton" de "Login_access_po" y presionarlo
     And Close Browser
 

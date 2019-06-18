@@ -1,0 +1,196 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 110715,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "01 - login desde inversionesSecurity.cl",
+        "description": "",
+        "id": "validaciones-en-login;01---login-desde-inversionessecurity.cl",
+        "after": [
+          {
+            "result": {
+              "duration": 116291,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3384301220,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Abrir navegador con la siguiente URL \"https://www.inversionessecurity.cl/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.inversionessecurity.cl/",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.OpenBrowser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5011934498,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Esperar \"5\" segundos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 9
+                }
+              ],
+              "location": "StepDefinitions.WaitNSeconds(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10097286689,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Buscar botón \"Login\" de \"MainPage_po\" y presionarlo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 14
+                },
+                {
+                  "val": "MainPage_po",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinitions.SearchAndClickButton(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14295610,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Validar redireccionamiento a \"https://privado.inversionessecurity.cl/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://privado.inversionessecurity.cl/login",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.ValidateRedirect(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4120806022,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Ingresar el Rut de Usuario \"12485766k\" al formulario",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12485766k",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinitions.RutLogin(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4110838397,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Ingresar la contrasena de Usuario \"1234asdf\" al formulario",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234asdf",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinitions.PasswordLogin(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2471902338,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Buscar botón \"LoginButton\" de \"Login_access_po\" y presionarlo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LoginButton",
+                  "offset": 14
+                },
+                {
+                  "val": "Login_access_po",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.SearchAndClickButton(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 114114605,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Close Browser",
+            "match": {
+              "location": "StepDefinitions.closeBrowserInstance()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@tagg"
+          }
+        ]
+      }
+    ],
+    "name": "Validaciones en Login",
+    "description": "Se espera un correcto login desde distintos urls",
+    "id": "validaciones-en-login",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]

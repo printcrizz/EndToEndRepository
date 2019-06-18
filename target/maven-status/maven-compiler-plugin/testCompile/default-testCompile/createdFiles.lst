@@ -1,8 +1,0 @@
-stepdefs/ServiceHooks.class
-pageObjects/Login_access_po.class
-utils/SeleniumUtils.class
-utils/EnvironmentsVariables.class
-utils/MySqlConnector.class
-pageObjects/MainPage_po.class
-pageObjects/Primer_ingreso_po.class
-TestRunner.class
