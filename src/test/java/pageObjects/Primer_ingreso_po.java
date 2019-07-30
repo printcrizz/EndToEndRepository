@@ -22,15 +22,24 @@ public class Primer_ingreso_po {
         return "//*[@id=\"step1\"]/div/div[1]/div[2]/div/div/input";
     }
     public String ApellidoMaterno() {
-        return "//*[@id=\"step1\"]/div/div[1]/div[2]/div/div/input";
+        return "//*[@id=\"step1\"]/div/div[1]/div[3]/div/div/input";
     }
     public String NumeroDeSerieCedula() {
-        return "//*[@id=\"step1\"]/div/div[1]/div[2]/div/div/input";
+        return "//*[@id=\"step1\"]/div/div[1]/div[5]/div/div/input";
     }
     public String FechaDeNacimiento() {
-        return "//*[@id=\"step1\"]/div/div[1]/div[2]/div/div/input";
+        return "//*[@id=\"date\"]";
     }
     public String ContinuarStep2() {
         return "//*[@id=\"step1\"]/div/div[3]/div[1]/a";
     }
+    public String FormatoCedula(){
+        return "//*[@id=\"o-alert__step2\"]/p[2]/strong";
+    }
+    public String IconClose(){
+        return "//*[@id=\"o-alert__step2\"]/a/i";
+    }
+
+    //class="o-btn o-btn--primary js-change_step o-btn--disable"
+    //o-btn o-btn--primary js-change_step
 }

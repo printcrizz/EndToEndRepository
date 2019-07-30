@@ -142,7 +142,6 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
-                        <usedefaultlisteners>true</usedefaultlisteners>>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

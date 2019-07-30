@@ -31,7 +31,7 @@
   },
   {
     "name": "PortalUrl",
-    "value": "https://privado.inversionessecurity.cl"
+    "value": "http://www.dev2.inversionessecurity.cl"
   },
   {
     "name": "PortalCredentialsUser",
@@ -40,6 +40,10 @@
   {
     "name": "PortalCredentialsPassword",
     "value": "1234asdf"
+  },
+  {
+    "name": "ScreenshotsDirectory",
+    "value": "test-output/Screenshots"
   }
   ]
 }

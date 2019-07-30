@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import  java.sql.SQLException;
 import java.util.Date;
 
-public class MySqlConnector {
+public class SqlConnector {
 
     private Connection connect = null;
     private Statement statement = null;

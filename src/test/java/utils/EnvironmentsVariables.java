@@ -40,4 +40,9 @@ public class EnvironmentsVariables {
         JsonNode jsonNode = objectMapper.readTree(hijo);
         return jsonNode.get(value).asText();
     }
+    public String ReadTextsOnWizard(String name,String object)throws Exception{
+            Object obj2 = new JSONParser().parse(new FileReader("src/test/resources/texts/"+name+".json"));
+            JSONObject jo = (JSONObject) obj2;
+            return jo.get(object).toString();
+    }
 }

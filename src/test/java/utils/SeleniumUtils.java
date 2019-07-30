@@ -1,36 +1,67 @@
 package utils;
 
+import cucumber.api.java.Before;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
-
+import org.openqa.selenium.remote.DesiredCapabilities;
+import java.net.URL;
+import java.net.MalformedURLException;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import javax.imageio.ImageIO;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.net.URL;
-
 
 public class SeleniumUtils {
 
-    public WebDriver driver;
-    public EnvironmentsVariables env = new EnvironmentsVariables();
-    private static ChromeDriverService service;
+    private static WebDriver driver;
+    private EnvironmentsVariables env = new EnvironmentsVariables();
+    private GeneralUtils gu = new GeneralUtils();
+    private static String FOLDERNAME = "Evidence";
+    private String baseUrl;
+    private String nodeUrl;
+    DesiredCapabilities capability;
+    private boolean driver_local ;
 
-    public void OpenBrowser(String url)throws Exception {
+    public void setUp()throws Exception{
+        SetProperties();
+        driver_local = true;
+        baseUrl = System.getProperty("PortalUrl");
+        nodeUrl = "http://localhost:4444/wd/hub";
+        //nodeUrl = "http://159.203.183.129:4444/wd/hub";
+        capability = DesiredCapabilities.chrome();
+        capability.setBrowserName("chrome");
+        capability.setPlatform(Platform.LINUX);
+        driver = new RemoteWebDriver(new URL(nodeUrl), capability);
+
+    }
+
+    private void SetProperties()throws Exception{
         env.ReadJSONProperties();
-        driver = new ChromeDriver();
+    }
+    public String ReadTexts(String name, String object)throws Exception{
+        return env.ReadTextsOnWizard(name, object);
+    }
+    public void OpenBrowser(String url)throws Exception{
+        if(!driver_local){
+            System.out.println("soy falso");
+           // driver = new ChromeDriver();
+        }
         driver.get(url);
     }
     public void maximizeBrowser(){
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(3, java.util.concurrent.TimeUnit.SECONDS);
+        //driver.manage().timeouts().pageLoadTimeout(30, java.util.concurrent.TimeUnit.SECONDS);
+        //driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(30, java.util.concurrent.TimeUnit.SECONDS);
     }
     public void CloseBrowser() {
         driver.close();
@@ -89,7 +120,7 @@ public class SeleniumUtils {
         WebDriverWait wait = new WebDriverWait(driver, 3);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
         String path = driver.findElement(By.xpath(xpath)).getText();
-        assert path.contains(value);
+       // assert path.contains(value);
         return path.contains(value);
     }
     //compara 2 imágenes y retorna si son iguales.
@@ -138,7 +169,35 @@ public class SeleniumUtils {
         Object aux = innerClass.newInstance(); // invoke empty constructor
         Method getNameMethod = aux.getClass().getMethod(methodName);
         String name = (String) getNameMethod.invoke(aux); // explicit cast
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         return name;
+    }
+
+    public void SetAttribute(String id, String attribute){
+        WebElement element = driver.findElement(By.xpath(id));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].setAttribute('placeholder',"+attribute+" )",element);
+    }
+    public String getClass(String path,String po)throws Exception{
+        return driver.findElement(By.xpath(GetXpathByName(path,po))).getAttribute("class");
+    }
+    public String ValidateBreadCrumb(String status)throws Exception{
+        return getClass(status, "Wizard_po");
+    }
+    public void takeScreenshot() throws Exception {
+        CreateDirectory("evidencias");
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File(FOLDERNAME+"/screenshot-"+gu.CreateTimeStamp()+".png"));
+    }
+    private void CreateDirectory(String nameFolder){
+        File newFolder = new File(System.getProperty("ScreenshotsDirectory")+"/"+nameFolder);
+        FOLDERNAME =newFolder.toString();
+        boolean created =  newFolder.mkdirs();
+        if(created){
+            System.out.println("screenshot tomado en "+FOLDERNAME);
+        }else
+            System.out.println("screenshot tomado en 2 "+FOLDERNAME);
+    }
+    public void AfterTest(){
+        driver.quit();
     }
 }
