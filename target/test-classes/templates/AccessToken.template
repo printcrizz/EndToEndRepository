@@ -1,4 +1,0 @@
-{
-  "grant_type" : "client_credentials",
-  "identifier" : "${Rut}"
-}
