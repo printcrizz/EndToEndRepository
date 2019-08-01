@@ -36,11 +36,12 @@ public class SeleniumUtils {
         SetProperties();
         driver_local = true;
         baseUrl = System.getProperty("PortalUrl");
-        nodeUrl = "http://localhost:4444/wd/hub";
+        nodeUrl = "http://10.242.177.49:4444/wd/hub";
         //nodeUrl = "http://159.203.183.129:4444/wd/hub";
         capability = DesiredCapabilities.chrome();
         capability.setBrowserName("chrome");
         capability.setPlatform(Platform.LINUX);
+        capability.setVersion("69.0.3497.100");
         driver = new RemoteWebDriver(new URL(nodeUrl), capability);
 
     }
