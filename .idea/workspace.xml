@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29cdbf45-14d9-4f07-af90-35169db30740" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/texts/Clave_primaria.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/Primer_ingreso_po.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/Primer_ingreso_po.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Wizard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Wizard.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/html/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/overview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/suites.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suites.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/xml/TestRunner_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/xml/TestRunner_results.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="550">
+              <caret line="147" column="5" lean-forward="true" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,10 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Wizard.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/texts/Clave_primaria.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="835">
-              <caret line="66" column="42" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -46,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/texts/Completa_datos_personales.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state>
+              <caret selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -55,8 +62,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/Primer_ingreso_po.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="27" />
+              <folding>
+                <element signature="e#786#787#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,8 +84,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="420">
+              <caret line="28" column="63" lean-forward="true" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Wizard.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="602">
+              <caret line="67" column="72" lean-forward="true" selection-start-line="67" selection-start-column="72" selection-end-line="67" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -79,16 +108,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+            <state relative-caret-position="645">
+              <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2341#2342#0" expanded="true" />
-                <element signature="e#2371#2372#0" expanded="true" />
+                <element signature="e#2337#2338#0" expanded="true" />
+                <element signature="e#2407#2408#0" expanded="true" />
+                <element signature="e#2457#2458#0" expanded="true" />
+                <element signature="e#5957#5958#0" expanded="true" />
+                <element signature="e#6022#6023#0" expanded="true" />
+                <element signature="e#6480#6481#0" expanded="true" />
+                <element signature="e#6525#6526#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="47" column="32" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -118,6 +161,8 @@
       <find>steps</find>
       <find>(&quot;^Abrir el navegador en la pagina de login$&quot;)</find>
       <find>url</find>
+      <find>/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-informationtext/div[2]/div/wizard-button/button</find>
+      <find>click</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/test/resources/features</dir>
@@ -129,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/pageObjects/Primer_ingreso_po.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/SqlConnector.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/EnvironmentsVariables.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjects/Wizard_po.java" />
@@ -141,15 +185,17 @@
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.groovy" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/Environments.json" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/PrimerIngreso.feature" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/ServiceHooks.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/RestUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Wizard.feature" />
         <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/texts/Clave_primaria.json" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjects/Primer_ingreso_po.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Wizard.feature" />
       </list>
     </option>
   </component>
@@ -177,10 +223,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
+    <option name="x" value="-1919" />
     <option name="y" value="-649" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="1007" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -219,6 +265,22 @@
               <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pageObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -232,13 +294,33 @@
             <path>
               <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="texts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="cucumber-reports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="cucumber-reports" type="462c0819:PsiDirectoryNode" />
+              <item name="cucumber-pretty" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
               <item name="test-output" type="462c0819:PsiDirectoryNode" />
-              <item name="Screenshots" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,42 +379,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.07.30 at 12h 41m 06s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.02 at 14h 58m 33s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.07.30 at 14h 20m 40s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.02 at 15h 01m 58s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.07.30 at 14h 41m 05s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.02 at 15h 04m 31s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.07.30 at 14h 45m 27s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.05 at 11h 34m 23s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.07.30 at 14h 56m 14s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.05 at 11h 44m 06s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.07.31 at 18h 03m 11s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.05 at 11h 45m 03s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.01 at 15h 30m 12s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.05 at 11h 45m 37s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.01 at 15h 31m 51s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.05 at 11h 48m 49s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.01 at 15h 36m 15s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.05 at 12h 16m 17s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.01 at 16h 06m 14s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.05 at 12h 23m 41s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-649" width="1920" height="1057" extended-state="0" />
+    <frame x="-1919" y="-649" width="1920" height="1007" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20127796" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20127796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -341,7 +423,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3326425" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35081968" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -349,12 +431,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32896176" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32124352" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3202186" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24973376" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.28487754" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.28487754" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -445,21 +527,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Evidence/screenshot-2019-07-26 12:22:39.981.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Evidence/screenshot-2019-07-26 12:22:25.41.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-26 12:42:34.14.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-26 12:42:37.346.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-26 12:42:21.539.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-26 12:42:05.245.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -511,13 +578,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/target/cucumber-reports/rerun-reports/rerun.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/Primer_ingreso_po.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-30 14:37:40.226.png">
       <provider selected="true" editor-type-id="images" />
@@ -571,13 +631,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/Login.feature">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/texts/Completa_datos_personales.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-31 16:14:16.903.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -594,6 +647,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-31 18:02:30.214.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-31 16:13:05.398.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Environments.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -601,52 +667,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Wizard.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/texts/Completa_datos_personales.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="66" column="42" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
+        <state>
+          <caret selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-31 18:02:30.214.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-07-31 16:13:05.398.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/Primer_ingreso_po.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="270">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="344">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-05 12:16:14.277.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-05 12:23:40.559.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2337#2338#0" expanded="true" />
+            <element signature="e#2407#2408#0" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+            <element signature="e#5957#5958#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6480#6481#0" expanded="true" />
+            <element signature="e#6525#6526#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="550">
+          <caret line="147" column="5" lean-forward="true" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/texts/Clave_primaria.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2341#2342#0" expanded="true" />
-            <element signature="e#2371#2372#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="63" lean-forward="true" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Wizard.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="67" column="72" lean-forward="true" selection-start-line="67" selection-start-column="72" selection-end-line="67" selection-end-column="72" />
         </state>
       </provider>
     </entry>

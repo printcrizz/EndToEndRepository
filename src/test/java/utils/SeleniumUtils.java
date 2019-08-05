@@ -43,7 +43,6 @@ public class SeleniumUtils {
         capability.setPlatform(Platform.LINUX);
         capability.setVersion("69.0.3497.100");
         driver = new RemoteWebDriver(new URL(nodeUrl), capability);
-
     }
 
     private void SetProperties()throws Exception{
@@ -53,10 +52,8 @@ public class SeleniumUtils {
         return env.ReadTextsOnWizard(name, object);
     }
     public void OpenBrowser(String url)throws Exception{
-        if(!driver_local){
-            System.out.println("soy falso");
-           // driver = new ChromeDriver();
-        }
+        //driver = new ChromeDriver();
+
         driver.get(url);
     }
     public void maximizeBrowser(){
@@ -199,6 +196,6 @@ public class SeleniumUtils {
             System.out.println("screenshot tomado en 2 "+FOLDERNAME);
     }
     public void AfterTest(){
-        driver.quit();
+        //driver.quit();
     }
 }

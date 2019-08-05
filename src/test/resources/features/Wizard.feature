@@ -9,7 +9,7 @@ Feature: Como Test Automatizado
     And Ingresar la contrasena de Usuario "1234asdf" al formulario
     When Buscar boton "LoginButton" de "Login_access_po" y presionarlo
     And Esperar "10" segundos
-
+  @claves
   Scenario: 01 - Validar textos legales US Person en Wizard
     When Validar BreadCrumb en paso "DatosPersonales"
     And Se validan los textos en "NormasTexto"
@@ -60,9 +60,9 @@ Feature: Como Test Automatizado
     Then Close Browser
 
   Scenario: 05 - Cambio de Texto de identificador tributario al clickear usuario no posee rut Chileno
-    Given Inicio Sesión y espero visualizar el Wizard
-    And Presiono continuar hasta visualizar Datos Laborales
-    When Presiono "NO" en posee rut Chileno
-    Then El texto es "Rut Empleador"
-    And Presiono "SI" en posee rut Chileno
-    Then El texto es "Número Fiscal Identificador de Empresa Extranjera"
+   #Given Inicio Sesión y espero visualizar el Wizard
+   #And Presiono continuar hasta visualizar Datos Laborales
+   #When Presiono "NO" en posee rut Chileno
+   #Then El texto es "Rut Empleador"
+   #And Presiono "SI" en posee rut Chileno
+   #Then El texto es "Número Fiscal Identificador de Empresa Extranjera"

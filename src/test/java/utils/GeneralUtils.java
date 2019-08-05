@@ -4,6 +4,7 @@ import cucumber.api.DataTable;
 import org.openqa.selenium.WebDriver;
 
 import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.sql.Timestamp;
 import java.text.DecimalFormat;
 import java.util.List;
@@ -43,6 +44,14 @@ public class GeneralUtils {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         System.out.println(timestamp);
         return timestamp.toString();
+    }
+    public void clickOnRecaptcha()throws Exception{
+        Robot movement = new Robot();
+        movement.keyPress(KeyEvent.VK_TAB);
+        Thread.sleep(500);
+        movement.keyPress(KeyEvent.VK_TAB);
+        Thread.sleep(500);
+        movement.keyPress(KeyEvent.VK_SPACE);
     }
 }
 

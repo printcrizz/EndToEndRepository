@@ -7,6 +7,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import gherkin.lexer.Th;
 import utils.GeneralUtils;
 import utils.SqlConnector;
 import utils.RestUtils;
@@ -75,9 +76,9 @@ public class StepDefinitions {
     }
     @Given("^Ingresar el Rut de Usuario \"([^\"]*)\" al formulario$")
     public void RutLogin(String value)throws Throwable{
-        sel.takeScreenshot();
         sel.sendValuesXpath(sel.GetXpathByName("Ingreso_rut", "Login_access_po"),value);
         Thread.sleep(2000);
+        sel.takeScreenshot();
     }
     @Given("^Ingresar la contrasena de Usuario \"([^\"]*)\" al formulario$")
     public void PasswordLogin(String value)throws Throwable{
@@ -129,5 +130,20 @@ public class StepDefinitions {
           //      "    \"Mensaje\": \"Estados eliminados con éxito\"\n" +
             //    "}");
     }
+    @And("^Validar el texto desplegado en \"([^\"]*)\"$")
+    public void Validar_Texto_desplegado(String PO)throws Throwable{
+        assert sel.validateValueinXPath(sel.GetXpathByName(PO,"Primer_ingreso_po")).equals(sel.ReadTexts("Clave_primaria", PO));
+    }
 
+    @And("^Ingresar Rut \"([^\"]*)\" al formulario$")
+    public void LlenarRutFormulario(String field)throws Throwable{
+        sel.sendValuesXpath(sel.GetXpathByName("Rut_primer_ingreso", "Primer_ingreso_po"),field);
+    }
+    @And("^Click en no soy un robot$")
+    public void ClickOnRecaptcha()throws Throwable{
+        //sel.clickButtonInXPath(sel.GetXpathByName("Recaptcha","Primer_ingreso_po"));
+        gu.clickOnRecaptcha();
+        Thread.sleep(10000);
+        sel.takeScreenshot();
+    }
 }
