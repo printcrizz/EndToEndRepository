@@ -89,7 +89,7 @@ public class StepDefinitions {
     public void SendValueToObject(String value, String field)throws Throwable{
         sel.sendValuesXpath(sel.GetXpathByName(field, "MainPage_po"),value);
     }
-    @And("^El producto tiene \"([^\\\"]*)\" como nombre en xpath \"([^\\\"]*)\"$")
+    @And("^El producto tiene \"([^\"]*)\" como nombre en xpath \"([^\\\"]*)\"$")
     public void ValidateText(String value, String xpath)throws Throwable{
         assert sel.containsValueInXPath(sel.GetXpathByName(xpath,"MainPage_po"),value);
     }
