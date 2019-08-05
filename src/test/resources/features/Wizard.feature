@@ -1,4 +1,4 @@
-Feature: Como Test Automatizado
+Feature: Identificador Tributario
   quiero validar el funcionamiento de Identificador Tributario en wizard
   al seleccionar un cliente sin rut chileno
 
@@ -9,7 +9,7 @@ Feature: Como Test Automatizado
     And Ingresar la contrasena de Usuario "1234asdf" al formulario
     When Buscar boton "LoginButton" de "Login_access_po" y presionarlo
     And Esperar "10" segundos
-  @claves
+  
   Scenario: 01 - Validar textos legales US Person en Wizard
     When Validar BreadCrumb en paso "DatosPersonales"
     And Se validan los textos en "NormasTexto"

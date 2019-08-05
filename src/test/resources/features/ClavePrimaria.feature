@@ -7,7 +7,7 @@ Feature: Clave Primaria
     And Validar el texto desplegado en "Crear_clave_de_acceso"
     And Buscar boton "Continuar_step_2" de "Primer_ingreso_po" y presionarlo
    And Ingresar Rut "12485766k" al formulario
-   And Click en no soy un robot
+   #And Click en no soy un robot
    # And Buscar boton "Continuar" de "Primer_ingreso_po" y presionarlo
    # And Ingresar la contrasena de Usuario "1234asdf" al formulario
    # And Ingresar la contrasena de Usuario "1234asdf" al formulario
