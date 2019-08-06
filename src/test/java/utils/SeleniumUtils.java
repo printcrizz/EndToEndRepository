@@ -203,7 +203,7 @@ public class SeleniumUtils {
             System.out.println("screenshot tomado en 2 "+FOLDERNAME);
     }
     public void AfterTest(){
-        //driver.quit();
+        driver.quit();
     }
     public void SelectDrowdown(String xpath, String text){
         Select drp = new Select(driver.findElement(By.xpath(xpath)));
