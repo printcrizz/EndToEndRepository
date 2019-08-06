@@ -15,7 +15,7 @@ import java.net.URL;
 import java.net.MalformedURLException;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import javax.imageio.ImageIO;
-
+import org.openqa.selenium.support.ui.Select;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -52,7 +52,7 @@ public class SeleniumUtils {
         return env.ReadTextsOnWizard(name, object);
     }
     public void OpenBrowser(String url)throws Exception{
-        //driver = new ChromeDriver();
+        driver = new ChromeDriver();
 
         driver.get(url);
     }
@@ -186,6 +186,13 @@ public class SeleniumUtils {
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File(FOLDERNAME+"/screenshot-"+gu.CreateTimeStamp()+".png"));
     }
+    public void RecaptchaBypass(String xpath1, String xpathCheckbox){
+        WebElement iFrame = driver.findElement(By.xpath(xpath1));
+        driver.switchTo().frame(iFrame);
+
+        WebElement iFrame_checkbox = driver.findElement(By.xpath(xpathCheckbox));
+        iFrame_checkbox.click();
+    }
     private void CreateDirectory(String nameFolder){
         File newFolder = new File(System.getProperty("ScreenshotsDirectory")+"/"+nameFolder);
         FOLDERNAME =newFolder.toString();
@@ -197,5 +204,9 @@ public class SeleniumUtils {
     }
     public void AfterTest(){
         //driver.quit();
+    }
+    public void SelectDrowdown(String xpath, String text){
+        Select drp = new Select(driver.findElement(By.xpath(xpath)));
+        drp.selectByVisibleText(text);
     }
 }

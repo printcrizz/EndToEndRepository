@@ -19,25 +19,28 @@ public class Primer_ingreso_po {
         return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-validaterut/form/div[1]/wizard-input[1]/div/input";
     }
     public String Recaptcha(){
-        return "//*[@id=\"recaptcha-anchor\"]";
+        return "/html/body/div[2]/div[3]/div[1]/div/div";
     }
     public String Continuar(){
         return "//*[@id=\"step1\"]/div/form/div[3]/div[1]/button";
     }
     public String NombresInput(){
-        return "//*[@id=\"step1\"]/div/div[1]/div[1]/div/div/input";
+        return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div[2]/div[2]/container-element/div/app-bpoinformation/div/form/div[1]/div[3]/div[1]/wizard-input/div/input";
     }
     public String ApellidoPaterno() {
-        return "//*[@id=\"step1\"]/div/div[1]/div[2]/div/div/input";
+        return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div[2]/div[2]/container-element/div/app-bpoinformation/div/form/div[1]/div[3]/div[2]/wizard-input/div/input";
     }
     public String ApellidoMaterno() {
-        return "//*[@id=\"step1\"]/div/div[1]/div[3]/div/div/input";
+        return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div[2]/div[2]/container-element/div/app-bpoinformation/div/form/div[1]/div[4]/div[1]/wizard-input/div/input";
     }
     public String NumeroDeSerieCedula() {
-        return "//*[@id=\"step1\"]/div/div[1]/div[5]/div/div/input";
+        return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div[2]/div[2]/container-element/div/app-bpoinformation/div/form/div[1]/div[5]/div[1]/wizard-input/div/input";
     }
     public String FechaDeNacimiento() {
-        return "//*[@id=\"date\"]";
+        return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div[2]/div[2]/container-element/div/app-bpoinformation/div/form/div[1]/div[5]/div[2]/wizard-datepicker/div/p-calendar/span/input";
+    }
+    public String EstadoCivil(){
+        return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div[2]/div[2]/container-element/div/app-bpoinformation/div/form/div[1]/div[4]/div[2]/wizard-select/div/div/select";
     }
     public String ContinuarStep2() {
         return "//*[@id=\"step1\"]/div/div[3]/div[1]/a";
@@ -50,6 +53,18 @@ public class Primer_ingreso_po {
     }
     public String Continuar_step_2(){
         return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-informationtext/div[2]/div/wizard-button/button";
+    }
+    public String Continuar_disabled(){
+        return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-validaterut/form/div[3]/div[1]/wizard-button/button";
+    }
+    public String IframeXpath(){
+        return "/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-validaterut/form/div[2]/div/p-captcha/div/div/div/iframe";
+    }
+    public String checkboxRecaptcha(){
+        return "//*[@id=\"recaptcha-anchor\"]";
+    }
+    public String errorCedula(){
+        return "";
     }
     //class="o-btn o-btn--primary js-change_step o-btn--disable"
     //o-btn o-btn--primary js-change_step

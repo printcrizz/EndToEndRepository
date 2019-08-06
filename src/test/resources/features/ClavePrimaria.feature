@@ -6,10 +6,18 @@ Feature: Clave Primaria
     And Buscar boton "Primer_Ingreso" de "Primer_ingreso_po" y presionarlo
     And Validar el texto desplegado en "Crear_clave_de_acceso"
     And Buscar boton "Continuar_step_2" de "Primer_ingreso_po" y presionarlo
-   And Ingresar Rut "12485766k" al formulario
-   #And Click en no soy un robot
-   # And Buscar boton "Continuar" de "Primer_ingreso_po" y presionarlo
-   # And Ingresar la contrasena de Usuario "1234asdf" al formulario
+    And Ingresar Rut "173523947" al formulario
+    And Click en no soy un robot
+    And Esperar a que boton "Continuar_disabled" se active y hacer click
+    And Escribir "Cristian Enrique" en el campo "NombresInput" de formulario
+    And Escribir "Aravena" en el campo "ApellidoPaterno" de formulario
+    And Escribir "Vergara" en el campo "ApellidoMaterno" de formulario
+    And Seleccionar "Soltero (a)" en dropdown de "EstadoCivil" de formulario
+    And Escribir "512393200" en el campo "NumeroDeSerieCedula" de formulario
+    And Esperar "5" segundos
+    And Validar el texto desplegado en "errorCedula"
+    And Escribir "02/05/1990" en el campo "FechaDeNacimiento" de formulario
+   #And Ingresar la contrasena de Usuario "1234asdf" al formulario
    # And Ingresar la contrasena de Usuario "1234asdf" al formulario
    # And Buscar boton "Continuar" de "Primer_ingreso_po" y presionarlo
    # And Seleccionar 3 Preguntas de Seguridad (TBD)

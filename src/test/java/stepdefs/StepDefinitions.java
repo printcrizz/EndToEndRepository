@@ -142,8 +142,19 @@ public class StepDefinitions {
     @And("^Click en no soy un robot$")
     public void ClickOnRecaptcha()throws Throwable{
         //sel.clickButtonInXPath(sel.GetXpathByName("Recaptcha","Primer_ingreso_po"));
-        gu.clickOnRecaptcha();
-        Thread.sleep(10000);
+        //gu.clickOnRecaptcha();
+        sel.RecaptchaBypass(sel.GetXpathByName("IframeXpath","Primer_ingreso_po"),sel.GetXpathByName("checkboxRecaptcha","Primer_ingreso_po"));
+        Thread.sleep(85000);
         sel.takeScreenshot();
+    }
+    @And("^Esperar a que boton \"([^\"]*)\" se active y hacer click$")
+    public void WaitButtonRed(String button)throws Exception{
+        //assert sel.getClass(sel.GetXpathByName(button,"Primer_ingreso_po"),"Primer_ingreso_po").equalsIgnoreCase("ng-touched ng-dirty ng-valid");
+        sel.clickButtonInXPath(sel.GetXpathByName(button,"Primer_ingreso_po"));
+    }
+    @And("^Seleccionar \"([^\"]*)\" en dropdown de \"([^\"]*)\" de formulario$")
+    public void SelectDropdown(String state, String component)throws Throwable{
+        sel.SelectDrowdown(sel.GetXpathByName(component, "Primer_ingreso_po"), state);
+
     }
 }
