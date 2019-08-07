@@ -149,12 +149,12 @@ public class StepDefinitions {
         sel.RecaptchaBypass(sel.GetXpathByName("IframeXpath","Primer_ingreso_po"),sel.GetXpathByName("checkboxRecaptcha","Primer_ingreso_po"));
         System.out.println("Voy por aca recaptcha2");
         sel.takeScreenshot();
-        //Thread.sleep(85000);
+        Thread.sleep(15000);
         sel.takeScreenshot();
     }
     @And("^Esperar a que boton \"([^\"]*)\" se active y hacer click$")
     public void WaitButtonRed(String button)throws Exception{
-        Thread.sleep(12000);
+        Thread.sleep(7000);
         //assert sel.getClass(sel.GetXpathByName(button,"Primer_ingreso_po"),"Primer_ingreso_po").equalsIgnoreCase("ng-touched ng-dirty ng-valid");
         sel.clickButtonInXPath(sel.GetXpathByName(button,"Primer_ingreso_po"));
     }
