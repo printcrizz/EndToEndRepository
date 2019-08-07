@@ -4,32 +4,32 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="151,052">
+           time="77,855">
   <properties />
-            <testcase name="feature" time="151,052" classname="TestRunner">
+            <testcase name="feature" time="77,855" classname="TestRunner">
                 <failure type="cucumber.runtime.CucumberException"
                   message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-validaterut/form/div[3]/div[1]/wizard-button/button&quot;}
   (Session info: chrome=75.0.3770.142)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.04 seconds
+Command duration or timeout: 30.02 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;10.242.177.49&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56517}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/_z/1wy560m10m383qjk_f24mg7h0000gn/T/.com.google.Chrome.dlBYKG}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 302c5cb052928304eb4aff94d72e6ac4
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60711}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/_z/1wy560m10m383qjk_f24mg7h0000gn/T/.com.google.Chrome.7X73pY}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69b6d86e3763ad21a344cdaabbdf0674
 *** Element info: {Using=xpath, value=/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-validaterut/form/div[3]/div[1]/wizard-button/button}"
               >
 <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-validaterut/form/div[3]/div[1]/wizard-button/button"}
   (Session info: chrome=75.0.3770.142)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.04 seconds
+Command duration or timeout: 30.02 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'MacBook-Pro.local', ip: '10.242.177.49', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56517}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/_z/1wy560m10m383qjk_f24mg7h0000gn/T/.com.google.Chrome.dlBYKG}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 302c5cb052928304eb4aff94d72e6ac4
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60711}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/_z/1wy560m10m383qjk_f24mg7h0000gn/T/.com.google.Chrome.7X73pY}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69b6d86e3763ad21a344cdaabbdf0674
 *** Element info: {Using=xpath, value=/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-validaterut/form/div[3]/div[1]/wizard-button/button}
   cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
   TestRunner.feature(TestRunner.java:30)
@@ -56,13 +56,13 @@ Session ID: 302c5cb052928304eb4aff94d72e6ac4
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-validaterut/form/div[3]/div[1]/wizard-button/button"}
   (Session info: chrome=75.0.3770.142)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.04 seconds
+Command duration or timeout: 30.02 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'MacBook-Pro.local', ip: '10.242.177.49', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56517}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/_z/1wy560m10m383qjk_f24mg7h0000gn/T/.com.google.Chrome.dlBYKG}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 302c5cb052928304eb4aff94d72e6ac4
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60711}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=/var/folders/_z/1wy560m10m383qjk_f24mg7h0000gn/T/.com.google.Chrome.7X73pY}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69b6d86e3763ad21a344cdaabbdf0674
 *** Element info: {Using=xpath, value=/html/body/app-root/app-primarykey/main/div/div/div/app-first-entry/div/div/section/div/div[2]/container-element/div/app-validaterut/form/div[3]/div[1]/wizard-button/button}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -76,7 +76,7 @@ Session ID: 302c5cb052928304eb4aff94d72e6ac4
   org.openqa.selenium.By$ByXPath.findElement(By.java:361)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
   utils.SeleniumUtils.clickButtonInXPath(SeleniumUtils.java:78)
-  stepdefs.StepDefinitions.WaitButtonRed(StepDefinitions.java:153)
+  stepdefs.StepDefinitions.WaitButtonRed(StepDefinitions.java:159)
   ✽.And Esperar a que boton "Continuar_disabled" se active y hacer click(ClavePrimaria.feature:11)
 ]]>
       </failure>

@@ -52,7 +52,7 @@ public class SeleniumUtils {
         return env.ReadTextsOnWizard(name, object);
     }
     public void OpenBrowser(String url)throws Exception{
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
 
         driver.get(url);
     }

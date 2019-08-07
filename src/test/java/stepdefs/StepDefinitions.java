@@ -138,17 +138,23 @@ public class StepDefinitions {
     @And("^Ingresar Rut \"([^\"]*)\" al formulario$")
     public void LlenarRutFormulario(String field)throws Throwable{
         sel.sendValuesXpath(sel.GetXpathByName("Rut_primer_ingreso", "Primer_ingreso_po"),field);
+        Thread.sleep(2000);
+        sel.takeScreenshot();
     }
     @And("^Click en no soy un robot$")
     public void ClickOnRecaptcha()throws Throwable{
         //sel.clickButtonInXPath(sel.GetXpathByName("Recaptcha","Primer_ingreso_po"));
         //gu.clickOnRecaptcha();
+        System.out.println("Voy por aca recaptcha");
         sel.RecaptchaBypass(sel.GetXpathByName("IframeXpath","Primer_ingreso_po"),sel.GetXpathByName("checkboxRecaptcha","Primer_ingreso_po"));
-        Thread.sleep(85000);
+        System.out.println("Voy por aca recaptcha2");
+        sel.takeScreenshot();
+        //Thread.sleep(85000);
         sel.takeScreenshot();
     }
     @And("^Esperar a que boton \"([^\"]*)\" se active y hacer click$")
     public void WaitButtonRed(String button)throws Exception{
+        Thread.sleep(12000);
         //assert sel.getClass(sel.GetXpathByName(button,"Primer_ingreso_po"),"Primer_ingreso_po").equalsIgnoreCase("ng-touched ng-dirty ng-valid");
         sel.clickButtonInXPath(sel.GetXpathByName(button,"Primer_ingreso_po"));
     }
