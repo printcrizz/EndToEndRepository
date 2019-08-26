@@ -54,4 +54,7 @@ public class Wizard_po {
     public String DatosLaborales(){
         return "/html/body/app-root/app-header/app-wizard/app-wizard-modal-container[17]/p-dialog/div/div[2]/app-dinamico-form/div/h4";
     }
+    public String CompletarDespues(){
+        return "/html/body/app-root/app-header/app-wizard/app-wizard-modal-container/p-dialog/div/div[2]/app-dinamico-form/div/div/form/app-controls/div/div/div[2]/button[1]";
+    }
 }

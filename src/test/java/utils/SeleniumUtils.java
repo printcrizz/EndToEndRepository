@@ -1,9 +1,11 @@
 package utils;
 
 import cucumber.api.java.Before;
+import jdk.internal.util.xml.impl.Input;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -30,11 +32,10 @@ public class SeleniumUtils {
     private String baseUrl;
     private String nodeUrl;
     DesiredCapabilities capability;
-    private boolean driver_local ;
+    //private boolean driver_local = true ;
 
     public void setUp()throws Exception{
         SetProperties();
-        driver_local = true;
         baseUrl = System.getProperty("PortalUrl");
         nodeUrl = "http://10.242.177.49:4444/wd/hub";
         //nodeUrl = "http://159.203.183.129:4444/wd/hub";
@@ -42,7 +43,8 @@ public class SeleniumUtils {
         capability.setBrowserName("chrome");
         capability.setPlatform(Platform.LINUX);
         capability.setVersion("69.0.3497.100");
-        driver = new RemoteWebDriver(new URL(nodeUrl), capability);
+        //driver = new RemoteWebDriver(new URL(nodeUrl), capability);
+
     }
 
     private void SetProperties()throws Exception{
@@ -52,7 +54,7 @@ public class SeleniumUtils {
         return env.ReadTextsOnWizard(name, object);
     }
     public void OpenBrowser(String url)throws Exception{
-        //driver = new ChromeDriver();
+        driver = new ChromeDriver();
 
         driver.get(url);
     }
@@ -143,7 +145,11 @@ public class SeleniumUtils {
     }
     public void Scrolling(String id){
         WebElement element = driver.findElement(By.xpath(id));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element);
+        actions.perform();
+        //((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+
     }
     public boolean ElementExist(String xpath){
         boolean re=false;
@@ -203,7 +209,7 @@ public class SeleniumUtils {
             System.out.println("screenshot tomado en 2 "+FOLDERNAME);
     }
     public void AfterTest(){
-        driver.quit();
+            //driver.quit();
     }
     public void SelectDrowdown(String xpath, String text){
         Select drp = new Select(driver.findElement(By.xpath(xpath)));

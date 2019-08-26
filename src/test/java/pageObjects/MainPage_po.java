@@ -34,6 +34,9 @@ public class MainPage_po {
     public String ProductosYServicios(){
         return "//*[@id=\"page\"]/header/div[1]/ul/li[2]/a";
     }
+    public String Productos(){
+        return "//*[@id=\"dl-menu-desktop\"]/ul/li[2]/a";
+    }
     public String FondosMutuos(){
         return "//*[@id=\"page\"]/header/div[1]/ul/li[2]/div/ul[1]/ul/li[1]/a";
     }
@@ -41,7 +44,7 @@ public class MainPage_po {
         return "//*[@id=\"page\"]/header/div[1]/ul/li[2]/div/ul[1]/ul/li[2]/a";
     }
     public String Acciones(){
-        return "//*[@id=\"page\"]/header/div[1]/ul/li[2]/div/ul[1]/ul/li[3]/a";
+        return "//*[@id=\"dl-menu-desktop\"]/ul/li[2]/div/ul/li[4]/a";
     }
     public String RentaFija(){
         return "//*[@id=\"page\"]/header/div[1]/ul/li[2]/div/ul[1]/ul/li[4]/a";

@@ -163,4 +163,24 @@ public class StepDefinitions {
         sel.SelectDrowdown(sel.GetXpathByName(component, "Primer_ingreso_po"), state);
 
     }
+    @And("^Seleccionar \"([^\"]*)\" accion a comprar$")
+    public void SelectAction(String value)throws Throwable{
+        sel.clickButtonInXPath(sel.GetXpathByName("AccionesDropDown","Acciones_po"));
+        sel.sendValuesXpath(sel.GetXpathByName("AccionesDropDown", "Acciones_po"),value);
+        //sel.SelectDrowdown(sel.GetXpathByName("AccionesDropDown", "Acciones_po"), value);
+        sel.clickButtonInXPath(sel.GetXpathByName(value,"Acciones_po"));
+        Thread.sleep(3000);
+        sel.takeScreenshot();
+    }
+    @And("^Hacer Scroll hasta \"([^\"]*)\"$")
+    public void ScrollTo(String value)throws Throwable{
+        sel.Scrolling(sel.GetXpathByName(value,"Acciones_po"));
+        Thread.sleep(2500);
+        sel.takeScreenshot();
+    }
+    @Then("^Visualizar Precio de Acción \"([^\"]*)\"$")
+    public void actionPrize(String value)throws Throwable{
+        assert value.equalsIgnoreCase(sel.validateValueinXPath(sel.GetXpathByName("PrecioAccion","Acciones_po")));
+        sel.takeScreenshot();
+    }
 }
