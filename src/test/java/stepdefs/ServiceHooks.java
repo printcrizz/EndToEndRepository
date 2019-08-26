@@ -26,6 +26,6 @@ public class ServiceHooks {
     @After
     public void CloseScenarios(){
         sell.AfterTest();
-        System.out.println("cerré los navegadores");
+        //System.out.println("cerré los navegadores");
     }
 }

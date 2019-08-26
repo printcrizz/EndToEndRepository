@@ -1,7 +1,6 @@
 package utils;
 
 import cucumber.api.java.Before;
-import jdk.internal.util.xml.impl.Input;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -43,7 +42,7 @@ public class SeleniumUtils {
         capability.setBrowserName("chrome");
         capability.setPlatform(Platform.LINUX);
         capability.setVersion("69.0.3497.100");
-        //driver = new RemoteWebDriver(new URL(nodeUrl), capability);
+        driver = new RemoteWebDriver(new URL(nodeUrl), capability);
 
     }
 
@@ -54,7 +53,7 @@ public class SeleniumUtils {
         return env.ReadTextsOnWizard(name, object);
     }
     public void OpenBrowser(String url)throws Exception{
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
 
         driver.get(url);
     }
@@ -209,7 +208,7 @@ public class SeleniumUtils {
             System.out.println("screenshot tomado en 2 "+FOLDERNAME);
     }
     public void AfterTest(){
-            //driver.quit();
+        //driver.quit();
     }
     public void SelectDrowdown(String xpath, String text){
         Select drp = new Select(driver.findElement(By.xpath(xpath)));

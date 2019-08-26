@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29cdbf45-14d9-4f07-af90-35169db30740" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/Acciones_po.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/CompraVentaAcciones.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/MainPage_po.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/MainPage_po.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/Wizard_po.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/Wizard_po.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/html/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/xml/TestRunner_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/xml/TestRunner_results.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="176" column="18" lean-forward="true" selection-start-line="176" selection-start-column="18" selection-end-line="176" selection-end-column="18" />
+            <state relative-caret-position="240">
+              <caret line="183" column="29" selection-start-line="183" selection-start-column="29" selection-end-line="183" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/CompraVentaAcciones.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+            <state relative-caret-position="285">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -129,9 +117,11 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="147" column="8" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="8" />
+              <caret line="211" column="12" selection-start-line="211" selection-start-column="12" selection-end-line="211" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#9018#9019#0" expanded="true" />
+                <element signature="e#9051#9052#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,8 +193,8 @@
         <option value="$PROJECT_DIR$/src/test/resources/Environments.json" />
         <option value="$PROJECT_DIR$/src/test/java/utils/RestUtils.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/CompraVentaAcciones.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjects/Acciones_po.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" />
       </list>
     </option>
@@ -233,7 +223,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="203" />
     <option name="width" value="1440" />
     <option name="height" value="827" />
   </component>
@@ -346,19 +336,6 @@
               <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
               <item name="test-output" type="462c0819:PsiDirectoryNode" />
-              <item name="Screenshots" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-              <item name="Screenshots" type="462c0819:PsiDirectoryNode" />
-              <item name="evidencias" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
               <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -424,9 +401,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.26 at 15h 42m 31s.xml">
-      <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.26 at 15h 42m 50s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -454,12 +428,15 @@
     <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.26 at 16h 36m 39s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.08.26 at 16h 40m 54s.xml">
+      <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
+    <frame x="0" y="203" width="1440" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.21459228" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.21459228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -468,7 +445,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.501006" side_tool="true" weight="0.24749643" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44625852" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44625852" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.5251701" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -743,15 +720,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/CompraVentaAcciones.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        <state relative-caret-position="285">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="176" column="18" lean-forward="true" selection-start-line="176" selection-start-column="18" selection-end-line="176" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="183" column="29" selection-start-line="183" selection-start-column="29" selection-end-line="183" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -761,9 +738,11 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="147" column="8" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="8" />
+          <caret line="211" column="12" selection-start-line="211" selection-start-column="12" selection-end-line="211" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#9018#9019#0" expanded="true" />
+            <element signature="e#9051#9052#0" expanded="true" />
           </folding>
         </state>
       </provider>
