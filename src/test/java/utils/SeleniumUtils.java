@@ -142,8 +142,8 @@ public class SeleniumUtils {
     public String getTexts(String id){
         return driver.findElement(By.xpath(id)).getText();
     }
-    public void Scrolling(String id){
-        WebElement element = driver.findElement(By.xpath(id));
+    public void Scrolling(String xpath){
+        WebElement element = driver.findElement(By.xpath(xpath));
         Actions actions = new Actions(driver);
         actions.moveToElement(element);
         actions.perform();
@@ -208,10 +208,14 @@ public class SeleniumUtils {
             System.out.println("screenshot tomado en 2 "+FOLDERNAME);
     }
     public void AfterTest(){
-        //driver.quit();
+        driver.quit();
     }
     public void SelectDrowdown(String xpath, String text){
         Select drp = new Select(driver.findElement(By.xpath(xpath)));
         drp.selectByVisibleText(text);
+    }
+    public String GetInputValue(String path)throws Exception {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        return driver.findElement(By.xpath(path)).getAttribute("value");
     }
 }

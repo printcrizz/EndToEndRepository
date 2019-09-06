@@ -53,5 +53,19 @@ public class GeneralUtils {
         Thread.sleep(500);
         movement.keyPress(KeyEvent.VK_SPACE);
     }
+    public float Multiplier(float Action_number, float multiplier){
+        return Action_number * multiplier;
+    }
+
+    public float StringToFloat(String var){
+        String f = var.replace(",",".");
+        float aux= Float.parseFloat(f);
+        return aux;
+    }
+    public String RemoveDollarChar(String key){
+        String aux = key;
+        aux = aux.replace("$","");
+        return aux.trim();
+    }
 }
 

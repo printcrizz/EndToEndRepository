@@ -8,6 +8,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import gherkin.lexer.Th;
+import pageObjects.Acciones_po;
 import utils.GeneralUtils;
 import utils.SqlConnector;
 import utils.RestUtils;
@@ -62,7 +63,7 @@ public class StepDefinitions {
     @Given("^Buscar boton \"([^\"]*)\" de \"([^\"]*)\" y presionarlo$")
     public void buscar_boton_de_y_presionarlo(String buttonName, String POName) throws Throwable{
         sel.clickButtonInXPath(sel.GetXpathByName(buttonName,POName));
-        Thread.sleep(3000);
+        Thread.sleep(7000);
         sel.takeScreenshot();
     }
     @And("^Validar Url contiene \"([^\"]*)\" extension$")
@@ -167,7 +168,6 @@ public class StepDefinitions {
     public void SelectAction(String value)throws Throwable{
         sel.clickButtonInXPath(sel.GetXpathByName("AccionesDropDown","Acciones_po"));
         sel.sendValuesXpath(sel.GetXpathByName("AccionesDropDown", "Acciones_po"),value);
-        //sel.SelectDrowdown(sel.GetXpathByName("AccionesDropDown", "Acciones_po"), value);
         sel.clickButtonInXPath(sel.GetXpathByName(value,"Acciones_po"));
         Thread.sleep(3000);
         sel.takeScreenshot();
@@ -180,7 +180,40 @@ public class StepDefinitions {
     }
     @Then("^Visualizar Precio de Acción \"([^\"]*)\"$")
     public void actionPrize(String value)throws Throwable{
+        Thread.sleep(3000);
         assert value.equalsIgnoreCase(sel.validateValueinXPath(sel.GetXpathByName("PrecioAccion","Acciones_po")));
+        sel.takeScreenshot();
+    }
+    @And("^Comprar \"([^\"]*)\" acciones$")
+    public void AddActions(String amount)throws Throwable {
+        float aux = gu.StringToFloat(sel.getTexts(sel.GetXpathByName("PrecioAccion", "Acciones_po")));
+        float _amount = gu.StringToFloat(amount);
+        int acciones = (int) gu.Multiplier(aux, _amount);
+        String _acciones = Integer.toString(acciones);
+        sel.sendValuesXpath(sel.GetXpathByName("AccionesAcomprar", "Acciones_po"), amount);
+        sel.takeScreenshot();
+        assert gu.RemoveDollarChar(sel.GetInputValue(sel.GetXpathByName("MontoAcomprar", "Acciones_po"))).equalsIgnoreCase(_acciones);
+        sel.Scrolling(sel.GetXpathByName("CheckboxCondiciones", "Acciones_po"));
+        sel.clickButtonInXPath(sel.GetXpathByName("CheckboxCondiciones", "Acciones_po"));
+        sel.takeScreenshot();
+        sel.clickButtonInXPath(sel.GetXpathByName("BotonAceptar", "Acciones_po"));
+        sel.takeScreenshot();
+    }
+    @And("^Seleccionar forma de pago \"([^\"]*)\"$")
+    public void PaymentMethodSelect(String text)throws Throwable{
+        sel.SelectDrowdown(sel.GetXpathByName("FormaDePagoDropDown", "Acciones_po"),text);
+        Thread.sleep(7000);
+        sel.Scrolling(sel.GetXpathByName("AceptoCheckBox","Acciones_po"));
+        Thread.sleep(2000);
+        sel.takeScreenshot();
+    }
+    @And("^Validar Monto de gastos operacionales$")
+    public void CalculateAmount(DataTable dt)throws Throwable{
+        List<Map<String, String>> list =dt.asMaps(String.class, String.class);
+        for(int i = 0; i<list.size();i++){
+           String value =  sel.validateValueinXPath(sel.GetXpathByName(list.get(i).get("key"),"Acciones_po"));
+           assert gu.RemoveDollarChar(value).equalsIgnoreCase(list.get(i).get("value"));
+        }
         sel.takeScreenshot();
     }
 }

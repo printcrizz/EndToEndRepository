@@ -8,16 +8,29 @@ Feature: Compra de acciones
     And Ingresar la contrasena de Usuario "1234asdf" al formulario
     When Buscar boton "LoginButton" de "Login_access_po" y presionarlo
     And Esperar "10" segundos
-    And Buscar boton "CompletarDespues" de "Wizard_po" y presionarlo
+    #And Buscar boton "CompletarDespues" de "Wizard_po" y presionarlo
 
-  Scenario: 01 - Validación precio de acciones en Web
+  Scenario: 01 - Compra exitosa de acciones con Saldo disponible en linea
     When Buscar boton "Productos" de "MainPage_po" y presionarlo
     And Buscar boton "Acciones" de "MainPage_po" y presionarlo
     And Buscar boton "Comprar" de "Acciones_po" y presionarlo
     And Esperar "35" segundos
-    And Hacer Scroll hasta "AccionesDropDown"
     And Seleccionar "FEPASA" accion a comprar
     Then Visualizar Precio de Acción "5,80"
+    And Seleccionar forma de pago "Saldo disponible en Línea de Inversión"
+    And Comprar "100" acciones
+    And Buscar boton "BotonContinuar" de "Acciones_po" y presionarlo
+    And Validar Monto de gastos operacionales
+    | key           |value |
+    | Comision      | 2    |
+    | Derecho       | 0    |
+    | IVA           | 228  |
+    | Otros         | 1.200 |
+    | TotalGastos   | 1.430 |
+    And Buscar boton "Confirmar" de "Acciones_po" y presionarlo
+    And Validar Monto de gastos operacionales
+    | key            |value  |
+    | TotalOperacion | 2.010 |
 
 
 
