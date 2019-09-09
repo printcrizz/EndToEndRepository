@@ -10,7 +10,7 @@ public class ServiceHooks {
     SeleniumUtils sell = new SeleniumUtils();
 
     @Before
-    public void initializeTest()throws Exception{
+    public void initializeTest(Scenario scenario)throws Exception{
         sell.setUp();
     }
 

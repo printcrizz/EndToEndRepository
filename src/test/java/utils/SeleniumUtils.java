@@ -1,5 +1,6 @@
 package utils;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -17,6 +18,8 @@ import java.net.MalformedURLException;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import javax.imageio.ImageIO;
 import org.openqa.selenium.support.ui.Select;
+import stepdefs.ServiceHooks;
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -43,7 +46,6 @@ public class SeleniumUtils {
         capability.setPlatform(Platform.LINUX);
         capability.setVersion("69.0.3497.100");
         driver = new RemoteWebDriver(new URL(nodeUrl), capability);
-
     }
 
     private void SetProperties()throws Exception{
@@ -186,10 +188,10 @@ public class SeleniumUtils {
     public String ValidateBreadCrumb(String status)throws Exception{
         return getClass(status, "Wizard_po");
     }
-    public void takeScreenshot() throws Exception {
-        CreateDirectory("evidencias");
+    public void takeScreenshot(String name, String feature) throws Exception {
+        CreateDirectory(feature);
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File(FOLDERNAME+"/screenshot-"+gu.CreateTimeStamp()+".png"));
+        FileUtils.copyFile(scrFile, new File(FOLDERNAME+"/"+ name +" "+gu.CreateTimeStamp()+".png"));
     }
     public void RecaptchaBypass(String xpath1, String xpathCheckbox){
         WebElement iFrame = driver.findElement(By.xpath(xpath1));

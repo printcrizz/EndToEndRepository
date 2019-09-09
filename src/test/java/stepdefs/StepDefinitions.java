@@ -3,6 +3,8 @@ package stepdefs;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -22,10 +24,18 @@ public class StepDefinitions {
     public SeleniumUtils sel = new SeleniumUtils();
     public SqlConnector sql = new SqlConnector();
     public static GeneralUtils gu = new GeneralUtils();
+    public String ScenarioName= "";
+    public String featureName = "";
     private String uri;
-
+    public String orderFolio ="";
 
     private static String token = null;
+
+    @Before
+    public void beforehook(Scenario scenario){
+        featureName = scenario.getId().split(";")[0];
+        ScenarioName = scenario.getName();
+    }
 
     @Then("^Close Browser$")
     public void closeBrowserInstance(){
@@ -64,7 +74,7 @@ public class StepDefinitions {
     public void buscar_boton_de_y_presionarlo(String buttonName, String POName) throws Throwable{
         sel.clickButtonInXPath(sel.GetXpathByName(buttonName,POName));
         Thread.sleep(7000);
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
     }
     @And("^Validar Url contiene \"([^\"]*)\" extension$")
     public void ValidateUrl(String path){
@@ -79,7 +89,7 @@ public class StepDefinitions {
     public void RutLogin(String value)throws Throwable{
         sel.sendValuesXpath(sel.GetXpathByName("Ingreso_rut", "Login_access_po"),value);
         Thread.sleep(2000);
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
     }
     @Given("^Ingresar la contrasena de Usuario \"([^\"]*)\" al formulario$")
     public void PasswordLogin(String value)throws Throwable{
@@ -140,7 +150,11 @@ public class StepDefinitions {
     public void LlenarRutFormulario(String field)throws Throwable{
         sel.sendValuesXpath(sel.GetXpathByName("Rut_primer_ingreso", "Primer_ingreso_po"),field);
         Thread.sleep(2000);
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
+    }
+    @And("^Ingresar preguntas de seguridad con respuesta \"([^\"]*)\"$")
+    public void SecurityQuestions(){
+        System.out.println("respondiendo preguntas de seguridad");
     }
     @And("^Click en no soy un robot$")
     public void ClickOnRecaptcha()throws Throwable{
@@ -149,9 +163,9 @@ public class StepDefinitions {
         System.out.println("Voy por aca recaptcha");
         sel.RecaptchaBypass(sel.GetXpathByName("IframeXpath","Primer_ingreso_po"),sel.GetXpathByName("checkboxRecaptcha","Primer_ingreso_po"));
         System.out.println("Voy por aca recaptcha2");
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
         Thread.sleep(15000);
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
     }
     @And("^Esperar a que boton \"([^\"]*)\" se active y hacer click$")
     public void WaitButtonRed(String button)throws Exception{
@@ -170,19 +184,19 @@ public class StepDefinitions {
         sel.sendValuesXpath(sel.GetXpathByName("AccionesDropDown", "Acciones_po"),value);
         sel.clickButtonInXPath(sel.GetXpathByName(value,"Acciones_po"));
         Thread.sleep(3000);
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
     }
     @And("^Hacer Scroll hasta \"([^\"]*)\"$")
     public void ScrollTo(String value)throws Throwable{
         sel.Scrolling(sel.GetXpathByName(value,"Acciones_po"));
         Thread.sleep(2500);
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
     }
     @Then("^Visualizar Precio de Acción \"([^\"]*)\"$")
     public void actionPrize(String value)throws Throwable{
         Thread.sleep(3000);
         assert value.equalsIgnoreCase(sel.validateValueinXPath(sel.GetXpathByName("PrecioAccion","Acciones_po")));
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
     }
     @And("^Comprar \"([^\"]*)\" acciones$")
     public void AddActions(String amount)throws Throwable {
@@ -191,13 +205,13 @@ public class StepDefinitions {
         int acciones = (int) gu.Multiplier(aux, _amount);
         String _acciones = Integer.toString(acciones);
         sel.sendValuesXpath(sel.GetXpathByName("AccionesAcomprar", "Acciones_po"), amount);
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
         assert gu.RemoveDollarChar(sel.GetInputValue(sel.GetXpathByName("MontoAcomprar", "Acciones_po"))).equalsIgnoreCase(_acciones);
         sel.Scrolling(sel.GetXpathByName("CheckboxCondiciones", "Acciones_po"));
         sel.clickButtonInXPath(sel.GetXpathByName("CheckboxCondiciones", "Acciones_po"));
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
         sel.clickButtonInXPath(sel.GetXpathByName("BotonAceptar", "Acciones_po"));
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
     }
     @And("^Seleccionar forma de pago \"([^\"]*)\"$")
     public void PaymentMethodSelect(String text)throws Throwable{
@@ -205,7 +219,7 @@ public class StepDefinitions {
         Thread.sleep(7000);
         sel.Scrolling(sel.GetXpathByName("AceptoCheckBox","Acciones_po"));
         Thread.sleep(2000);
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
     }
     @And("^Validar Monto de gastos operacionales$")
     public void CalculateAmount(DataTable dt)throws Throwable{
@@ -214,6 +228,50 @@ public class StepDefinitions {
            String value =  sel.validateValueinXPath(sel.GetXpathByName(list.get(i).get("key"),"Acciones_po"));
            assert gu.RemoveDollarChar(value).equalsIgnoreCase(list.get(i).get("value"));
         }
-        sel.takeScreenshot();
+        sel.takeScreenshot(ScenarioName, featureName);
+    }
+    @And("^Validar Accion visible en Mis Movimientos$")
+    public void MyActions()throws Throwable{
+        String numero = sel.validateValueinXPath(sel.GetXpathByName("NumeroSolicitud","Acciones_po"));
+        sel.clickButtonInXPath(sel.GetXpathByName("MisMovimientos", "Acciones_po"));
+        Thread.sleep(3500);
+        sel.clickButtonInXPath(sel.GetXpathByName("MisOrdenes","Acciones_po"));
+
+        String aux = sel.validateValueinXPath(sel.GetXpathByName("FolioAccion","Acciones_po"));
+        orderFolio = aux;
+        assert sel.validateValueinXPath(sel.GetXpathByName("InstrumentoAccion","Acciones_po")).contains("FEPASA");
+        assert aux.equalsIgnoreCase(numero);
+
+
+    }
+    @And("^Iniciar Sesion en Escritorio Comercial$")
+    public void LoginSECO(){
+
+    }
+    @And("^Filtrar Acciones por \"([^\"]*)\"$")
+    public void FilterActions(){
+
+    }
+    @And("^Validar el Estado de la accion$")
+    public void ActionStatus(){
+
+    }
+    @And("^Anular Orden de compra$")
+    public void CancellationAction()throws Throwable{
+        sel.clickButtonInXPath(sel.GetXpathByName("AnularOrden", "Acciones_po"));
+        Thread.sleep(3500);
+        sel.takeScreenshot(ScenarioName, featureName);
+        sel.clickButtonInXPath(sel.GetXpathByName("ContinuarAnulacion","Acciones_po"));
+        Thread.sleep(2000);
+        sel.takeScreenshot(ScenarioName, featureName);
+    }
+    @And("^Validar Orden anulada$")
+    public void ValidateOrder()throws Throwable{
+        sel.clickButtonInXPath(sel.GetXpathByName("CerrarPopupAnulacion", "Acciones_po"));
+        Thread.sleep(2000);
+        sel.clickButtonInXPath(sel.GetXpathByName("OrdenesAnuladas","Acciones_po"));
+        Thread.sleep(3500);
+        sel.takeScreenshot(ScenarioName, featureName);
+        assert sel.validateValueinXPath(sel.GetXpathByName("OrdenAnuladaFolio","Acciones_po")).equalsIgnoreCase(orderFolio);
     }
 }

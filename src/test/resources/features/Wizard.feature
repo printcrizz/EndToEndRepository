@@ -58,11 +58,3 @@ Feature: Identificador Tributario
     And Buscar boton "SiEsChileno" de "Wizard_po" y presionarlo
     And Se validan los textos en "RutEmpleador"
     Then Close Browser
-
-  Scenario: 05 - Cambio de Texto de identificador tributario al clickear usuario no posee rut Chileno
-   Given Inicio Sesión y espero visualizar el Wizard
-   And Presiono continuar hasta visualizar Datos Laborales
-   When Presiono "NO" en posee rut Chileno
-   Then El texto es "Rut Empleador"
-   And Presiono "SI" en posee rut Chileno
-   Then El texto es "Número Fiscal Identificador de Empresa Extranjera"

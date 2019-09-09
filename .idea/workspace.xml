@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29cdbf45-14d9-4f07-af90-35169db30740" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/Acciones_po.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/Acciones_po.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/Wizard_po.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/Wizard_po.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/ServiceHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/ServiceHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Environments.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Environments.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/CompraVentaAcciones.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CompraVentaAcciones.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Wizard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Wizard.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/texts/Clave_primaria.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/texts/Clave_primaria.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/html/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/overview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/html/suites.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suites.html" afterDir="false" />
@@ -31,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
+            <state relative-caret-position="1">
+              <caret line="236" column="27" selection-start-line="236" selection-start-column="27" selection-end-line="236" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,23 +44,43 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/CompraVentaAcciones.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="568">
+              <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Environments.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="64" column="34" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="34" />
+            <state relative-caret-position="495">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/ServiceHooks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/Acciones_po.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="100" column="38" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="38" />
               <folding>
-                <element signature="e#1735#1736#0" expanded="true" />
-                <element signature="e#1784#1785#0" expanded="true" />
+                <element signature="e#2915#2916#0" expanded="true" />
+                <element signature="e#2939#2940#0" expanded="true" />
+                <element signature="e#3633#3634#0" expanded="true" />
+                <element signature="e#3694#3695#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,62 +89,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="51" />
+            <state relative-caret-position="195">
+              <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#9049#9050#0" expanded="true" />
+                <element signature="e#9078#9079#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/RestUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/Acciones_po.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
-              <folding>
-                <element signature="e#1841#1842#0" expanded="true" />
-                <element signature="e#1918#1919#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-                <element signature="e#1974#1975#0" expanded="true" />
-                <element signature="e#2041#2042#0" expanded="true" />
-                <element signature="e#2066#2067#0" expanded="true" />
-                <element signature="e#2037#2038#0" expanded="true" />
-                <element signature="e#2062#2063#0" expanded="true" />
-                <element signature="e#2127#2128#0" expanded="true" />
-                <element signature="e#2151#2152#0" expanded="true" />
-                <element signature="e#2223#2224#0" expanded="true" />
-                <element signature="e#2247#2248#0" expanded="true" />
-                <element signature="e#2409#2410#0" expanded="true" />
-                <element signature="e#2475#2476#0" expanded="true" />
-                <element signature="e#2511#2512#0" expanded="true" />
-                <element signature="e#2536#2537#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/Wizard_po.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="e#1410#1411#0" expanded="true" />
-                <element signature="e#1494#1495#0" expanded="true" />
-                <element signature="e#1527#1528#0" expanded="true" />
-                <element signature="e#1621#1622#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -164,6 +145,9 @@
       <find>/div[1]/div[3]/div/input</find>
       <find>/html/body/app-root/app-actions/main/div/div[2]/div[2]/app-buy-actions/p-dialog/div/div[3]/p-footer/button</find>
       <find>datata</find>
+      <find>screens</find>
+      <find>takeS</find>
+      <find>take</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/test/resources/features</dir>
@@ -185,21 +169,21 @@
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.groovy" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/PrimerIngreso.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Wizard.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/texts/Clave_primaria.json" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjects/Primer_ingreso_po.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjects/MainPage_po.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/utils/RestUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjects/Wizard_po.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Wizard.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/texts/Clave_primaria.json" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/ServiceHooks.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Environments.json" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObjects/Wizard_po.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObjects/Acciones_po.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/CompraVentaAcciones.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjects/Acciones_po.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java" />
       </list>
     </option>
@@ -228,9 +212,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="830" />
+    <option name="x" value="-1920" />
+    <option name="y" value="-545" />
+    <option name="width" value="1920" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -276,55 +261,7 @@
               <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stepdefs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="drivers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="texts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
@@ -340,7 +277,7 @@
               <item name="Automation-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="EndToEndRepository" type="462c0819:PsiDirectoryNode" />
               <item name="test-output" type="462c0819:PsiDirectoryNode" />
-              <item name="Screenshots" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -406,42 +343,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 13h 19m 10s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 15h 31m 47s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 13h 22m 07s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 15h 37m 30s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 13h 27m 20s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 15h 42m 01s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 13h 29m 38s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 15h 46m 44s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 13h 43m 11s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 15h 51m 47s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 13h 46m 39s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 15h 59m 23s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 13h 50m 04s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 16h 29m 56s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 15h 19m 12s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 16h 58m 37s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 15h 22m 58s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 17h 29m 40s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.06 at 16h 18m 49s.xml">
+    <history-entry file="_Users_printcrizz_Documents_ThatRepo_EndToEndRepository_testng_xml - 2019.09.09 at 17h 47m 45s.xml">
       <configuration name="/Users/printcrizz/Documents/ThatRepo/EndToEndRepository/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1920" y="-545" width="1920" height="1010" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.19384836" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.34078807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -450,7 +386,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.501006" side_tool="true" weight="0.24749643" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21680216" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27995643" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.25135428" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -458,7 +394,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32896176" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3089431" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.30827886" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.3292517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
@@ -470,7 +406,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.16400427" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.29339722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -479,15 +415,15 @@
       <window_info id="Favorites" order="6" sideWeight="0.501006" side_tool="true" weight="0.24749643" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38360655" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.5251701" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27995643" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.25135428" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32896176" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3114754" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.30827886" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.3292517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
@@ -553,17 +489,121 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-22 12:38:33.505.png" />
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/Primer_ingreso_po.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="75" lean-forward="true" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+        <state relative-caret-position="180">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-23 12:47:40.325.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-27 10:56:07.553.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-27 14:30:58.797.png" />
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:58:42.634.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:58:31.641.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:57:44.544.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:57:33.562.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:56:46.387.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:56:35.339.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:55:47.955.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:55:36.744.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:54:48.924.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:54:38.448.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:54:21.031.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:54:10.586.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:53:23.173.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:53:12.513.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:52:23.924.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:52:12.924.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:50:50.632.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/texts/Clave_primaria.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:43:19.864.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:44:10.453.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:44:22.818.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:44:34.353.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:45:22.859.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:43:32.55.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:43:44.986.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:43:58.254.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:46:53.247.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 10:48:04.989.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:50:56.656.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-09 11:51:11.893.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ClavePrimaria.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="43" column="62" lean-forward="true" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/ServiceHooks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -571,172 +611,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-29 10:16:53.388.png" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Environments.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/MainPage_po.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Wizard.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-29 16:14:38.379.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-29 16:17:22.537.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-29 16:17:31.971.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-08-29 16:20:53.344.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-02 11:14:09.226.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-02 16:12:23.287.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-03 14:55:47.894.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-03 17:17:16.211.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-03 17:26:34.465.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-03 17:36:30.516.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-03 18:31:55.125.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 11:06:03.751.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 12:42:20.311.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 12:45:36.608.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 15:52:56.839.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 15:52:56.2.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 15:59:29.185.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 15:59:29.507.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 16:14:51.21.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 16:14:50.869.png" />
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-04 16:17:58.607.png" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/GeneralUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="64" column="34" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="34" />
-          <folding>
-            <element signature="e#1735#1736#0" expanded="true" />
-            <element signature="e#1784#1785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/Wizard_po.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1621#1622#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-05 12:35:12.723.png">
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones04 - Busqueda y validación de acciones en Monitor Bolsa2019-09-09 15:36:49.895.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/RestUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 10:58:45.473.png">
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/01 - Compra exitosa de acciones con Saldo disponible en linea2019-09-09 15:43:06.844.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 11:05:50.828.png">
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/01 - Compra exitosa de acciones con Saldo disponible en linea2019-09-09 15:43:24.174.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 11:08:02.165.png">
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/01 - Compra exitosa de acciones con Saldo disponible en linea2019-09-09 15:42:55.62.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 11:11:17.228.png">
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/01 - Compra exitosa de acciones con Saldo disponible en linea2019-09-09 15:54:46.818.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 11:19:29.197.png">
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/05 - Compra y anulacion de orden2019-09-09 16:56:19.192.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 11:19:25.878.png">
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/05 - Compra y anulacion de orden2019-09-09 16:57:58.937.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 12:22:01.325.png">
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/05 - Compra y anulacion de orden2019-09-09 16:58:06.256.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/05 - Compra y anulacion de orden 2019-09-09 17:29:37.644.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/05 - Compra y anulacion de orden 2019-09-09 17:29:39.923.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="51" />
+        <state relative-caret-position="195">
+          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#9049#9050#0" expanded="true" />
+            <element signature="e#9078#9079#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/Acciones_po.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
+        <state relative-caret-position="569">
+          <caret line="100" column="38" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="38" />
           <folding>
-            <element signature="e#1841#1842#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#2041#2042#0" expanded="true" />
-            <element signature="e#2066#2067#0" expanded="true" />
-            <element signature="e#2037#2038#0" expanded="true" />
-            <element signature="e#2062#2063#0" expanded="true" />
-            <element signature="e#2127#2128#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2223#2224#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
-            <element signature="e#2511#2512#0" expanded="true" />
-            <element signature="e#2536#2537#0" expanded="true" />
+            <element signature="e#2915#2916#0" expanded="true" />
+            <element signature="e#2939#2940#0" expanded="true" />
+            <element signature="e#3633#3634#0" expanded="true" />
+            <element signature="e#3694#3695#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 12:42:40.877.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 12:46:36.128.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 12:49:33.475.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 14:18:41.322.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/evidencias/screenshot-2019-09-06 14:22:57.723.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Environments.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="495">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/CompraVentaAcciones.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="568">
+          <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Screenshots/compra-de-acciones/05 - Compra y anulacion de orden 2019-09-09 17:47:14.79.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="236" column="27" selection-start-line="236" selection-start-column="27" selection-end-line="236" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
